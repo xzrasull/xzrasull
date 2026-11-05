@@ -1,115 +1,127 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#ffffff" />
-  <link rel="shortcut icon" href="1737549358908.png" type="image/x-icon">
-  <title>xzrasul</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&family=Fraunces:ital,wght@0,300;1,300&display=swap"
-    rel="stylesheet" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Расул Муминов — разработчик из Таджикистана, основатель Sanatplace." />
+  <link rel="shortcut icon" href="img/logo.png" type="image/png">
+  <title>Rasul Muminov · xzrasul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="fonts/FixelDisplay-Black.woff2" as="font" type="font/woff2" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <div class="name">xzrasul<em>.</em></div>
-      <div class="tagline">
-        <div class="dot"></div>
-        Small steps big changes
-      </div>
-    </header>
-    <p class="bio">
-      My name is Rasul Muminov. I am passionate about web development,
-      technology, and artificial intelligence. I create my own
-      <a href="#terminal" onclick="runProjects()">projects</a> , learn new
-      <a href="#terminal" onclick="runSkills()">skills</a>, and actively
-      develop in programming, cybersecurity, and application development. I am
-      interested in modern technologies, enjoy working on real-world tasks,
-      and like sharing knowledge with others.
-    </p>
-    <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-num">12</div>
-        <div class="stat-label">projects built</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">3</div>
-        <div class="stat-label">years coding</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">B1</div>
-        <div class="stat-label">english level</div>
-      </div>
+  <nav class="nav">
+    <a href="#top" class="logo">xzrasul<span class="cursor">_</span></a>
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#stack">stack</a>
+      <a href="#contact">contact</a>
     </div>
-    <div class="block">
-      <div class="block-label">Projects</div>
-      <div class="project">
-        <div class="project-name">BIMGROUP</div>
-        <div class="project-meta">
-          <span class="project-stack">HTML · CSS · JS</span>
-          <a class="project-link" href="https://bimgroup.tj/" target="_blank">↗ visit</a>
-        </div>
-      </div>
+  </nav>
 
-      <div class="project">
-        <div class="project-name">CAFE-HB</div>
-        <div class="project-meta">
-          <span class="project-stack">HTML · CSS · JS</span>
-          <a class="project-link" href="https://cafehb.vercel.app/" target="_blank">↗ demo</a>
-        </div>
-      </div>
-      <div class="project">
-        <div class="project-name">BRIGADES</div>
-        <div class="project-meta">
-          <span class="project-stack">HTML · CSS · JS</span>
-          <a class="project-link" href="https://workersadmin.vercel.app" target="_blank">↗ demo</a>
-        </div>
-      </div>
-      <div class="project">
-        <div class="project-name">BOOSTER</div>
-        <div class="project-meta">
-          <span class="project-stack">HTML · CSS · JS</span>
-          <a class="project-link" href="https://t.me/xzinstagrambot" target="_blank">↗ visit</a>
-        </div>
-      </div>
-      <span class="project-stack">
-        <a class="btn-project" href="#terminal" onclick="runProjects()">More Projects</a>
-      </span>
-    </div>
+  <main class="wrap" id="top">
 
-    <div id="terminal" class="block">
-      <div class="block-label">Terminal</div>
-      <div class="terminal">
-        <div class="term-bar">
-          <div class="term-dot r"></div>
-          <div class="term-dot y"></div>
-          <div class="term-dot g"></div>
+    <section class="hero">
+      <p class="prompt">rasul@tj <span class="dim">~ $</span> whoami</p>
+      <h1>
+        <span class="solid">RASUL</span>
+        <span class="outline">MUMINOV</span>
+      </h1>
+      <p class="role"><span class="dim">~$</span> <span id="typed"></span><span class="cursor">▍</span></p>
+
+      <dl class="fetch">
+        <dt>location</dt><dd>Таджикистан</dd>
+        <dt>focus</dt><dd>Full-Stack · автоматизация · AI</dd>
+        <dt>founder</dt><dd><a href="https://sanatplace.com" target="_blank" rel="noopener">sanatplace.com</a></dd>
+        <dt>status</dt><dd><span class="live"></span>открыт к проектам</dd>
+      </dl>
+
+      <div class="cta">
+        <a href="#contact" class="btn btn-fill">Связаться</a>
+        <a href="#projects" class="btn">Проекты ↓</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2><span class="dim">01</span> Обо мне</h2>
+      <div class="about">
+        <div class="about-head">
+          <figure class="avatar">
+            <img src="img/avatar.jpg?v=2" alt="Расул Муминов" width="480" height="480" loading="lazy" />
+          </figure>
+          <p class="about-lead">
+            Меня зовут Расул Муминов. Я начинающий разработчик и IT-энтузиаст из Таджикистана,
+            увлечённый созданием <span class="dim">современных цифровых продуктов и технологических решений.</span>
+          </p>
         </div>
-        <div class="term-body" id="termBody">
-          <div>
-            <span class="prompt">~</span>
-            <span class="out">type <span class="k">help</span> to start</span>
+
+        <div class="about-grid">
+          <div class="about-item">
+            <span class="about-key">// что делаю</span>
+            <p>Занимаюсь веб-разработкой, изучаю Full-Stack Development и работаю с различными
+              технологиями, включая Python, JavaScript, React, Django и базы данных.</p>
           </div>
-          <div class="input-row">
-            <span class="prompt">~</span>
-            <input class="term-input" id="termInput" onkeydown="runCmd(event)"
-              oninput="this.value = this.value.toLowerCase()" autocomplete="off" spellcheck="false" />
+          <div class="about-item">
+            <span class="about-key">// sanatplace</span>
+            <p>Я являюсь основателем <a href="https://sanatplace.com" target="_blank" rel="noopener">Sanatplace</a> — онлайн-платформы,
+              созданной для поддержки художников и развития искусства в Таджикистане. Также работаю над
+              собственными проектами в сфере автоматизации бизнеса, электронной коммерции и интеграции
+              искусственного интеллекта.</p>
           </div>
         </div>
+
+        <blockquote class="about-quote">
+          «Для меня программирование — это не просто написание кода, а возможность превращать идеи
+          в реальные продукты, которые решают задачи людей и бизнеса.»
+        </blockquote>
+
+        <p class="about-foot">Постоянно изучаю новые технологии, развиваю свои навыки и стремлюсь создавать
+          проекты, которые имеют практическую ценность.</p>
       </div>
-    </div>
-    <div class="links">
-      <a class="link" href="https://t.me/xzrasul" target="_blank">Telegram</a>
-      <a class="link" href="https://github.com/xzrasul13" target="_blank">GitHub</a>
-      <a class="link" href="#" target="_blank">CV</a>
-      <a class="link" href="mailto:xzrasul13@gmail.com" target="_blank">Email</a>
-      <a class="link" href="https://instagram.com/xzrasul" target="_blank">Instagram</a>
-    </div>
-  </div>
+    </section>
+
+    <section id="projects">
+      <h2><span class="dim">02</span> Проекты</h2>
+      <ul class="list">
+        <li><a class="row featured" href="https://sanatplace.com" target="_blank" rel="noopener">
+          <span class="n">00</span><span class="name">Sanatplace</span><span class="desc">платформа для художников Таджикистана · основатель</span><span class="go">↗</span></a></li>
+        <li><a class="row" href="https://tailorbase.vercel.app" target="_blank" rel="noopener">
+          <span class="n">01</span><span class="name">TailorBase</span><span class="desc">облачная база мерок клиентов для портных · Firebase</span><span class="go">↗</span></a></li>
+        <li><a class="row" href="https://cafehb.vercel.app" target="_blank" rel="noopener">
+          <span class="n">02</span><span class="name">CAFE-HB</span><span class="desc">онлайн-меню для кафе · HTML, CSS, JS</span><span class="go">↗</span></a></li>
+        <li><a class="row" href="https://github.com/xzrasull/xzrasull" target="_blank" rel="noopener">
+          <span class="n">03</span><span class="name">xzrasull</span><span class="desc">этот сайт-портфолио · HTML, CSS, JS</span><span class="go">↗</span></a></li>
+      </ul>
+    </section>
+
+    <section id="stack">
+      <h2><span class="dim">03</span> Стек</h2>
+      <div class="tags">
+        <span>Python</span><span>JavaScript</span><span>React</span><span>Django</span>
+        <span>PostgreSQL</span><span>Firebase</span><span>HTML/CSS</span><span>Git</span><span>Figma</span><span>Linux</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2><span class="dim">04</span> Контакты</h2>
+      <a class="mail" href="mailto:xzrasul13@gmail.com">xzrasul13@gmail.com</a>
+      <div class="socials">
+        <a href="https://t.me/xzrasul" target="_blank" rel="noopener">telegram</a>
+        <a href="https://github.com/xzrasull" target="_blank" rel="noopener">github</a>
+        <a href="https://instagram.com/xzrasul" target="_blank" rel="noopener">instagram</a>
+      </div>
+    </section>
+
+    <footer>© <span id="year"></span> · small steps, big changes</footer>
+  </main>
+
   <script src="script.js"></script>
 </body>
 
